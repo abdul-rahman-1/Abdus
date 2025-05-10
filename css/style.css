@@ -38,7 +38,15 @@
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
-/*for the contact btn in nav bar*/
+.jumbotron ,.body-container,.container {
+  animation: fadein 0.5s ease-in-out 0s 1 normal forwards;
+}
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+
 #contactbtn{
   display: inline-block;
   background-color: #5bad9c;
@@ -9975,9 +9983,9 @@ h6,
   background-size: cover;
 }
 
-.jumbotron.page-header {
+.jumbotron {
   position: relative;
-  background: url("../img/header2.jpg") no-repeat center center;
+  background: url("../img/header.jpg") no-repeat ;
   background-size: cover;
   height: 70vh;           /* a bit taller */
   min-height: 400px;
@@ -9989,7 +9997,7 @@ h6,
 }
 
 /* dark overlay for contrast */
-.jumbotron.page-header::before {
+.jumbotron::before {
   content: "";
   position: absolute;
   inset: 0;
